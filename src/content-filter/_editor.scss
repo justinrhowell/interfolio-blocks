@@ -1,0 +1,78 @@
+.wp-block-interfolio-block-content-filter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .categories-row{
+        display: flex;
+    }
+
+    .results-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        .sample-result-item{
+            .sample-result-image-container{
+                position: relative;
+                .sample-result-item-image{
+                    width: 100%;
+                    height: 250px;
+                    object-fit: cover;
+                    display: block;
+                }
+                .image-overlay{
+                    position: absolute;
+                    top:0;
+                    right:0;
+                    bottom:0;
+                    left:0;
+
+                    .type-label{
+                        padding: 10px;
+                        color: white;
+                        background-color: $_darkblue;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+
+    .pagination-controls-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .next-button, .previous-button{
+            border: none;
+            background: transparent;
+            font-size: 1em;
+
+            &:focus, &:active{
+                outline: none;
+            }
+        }
+    }
+}
+
+.interfolio-full-width-inspector-button{
+    width: 100%;
+    margin: 10px 0 !important;
+}
+
+.checkbox-container{
+    display: flex;
+    flex-wrap: wrap;
+
+    .label{
+        width: 100%;
+    }
+
+    .components-base-control{
+        width: 50%;
+
+        .components-checkbox-control__label {
+            margin-right: 10px;
+        }
+    }
+}

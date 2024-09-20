@@ -1,0 +1,49 @@
+.wp-block-interfolio-block-signature{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+    .image-container{
+        width: 100%;
+        text-align: center;
+        img{
+            width: 40%;
+            border-radius: 50%;
+        }
+    }
+
+    .text-container{
+        width: 100%;
+        padding-left: 10px;
+        text-align: center;
+
+        .author-name{
+            font-weight: bold;
+        }
+
+        .author-name, .body-text{
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: $_large){
+    .wp-block-interfolio-block-signature{
+        .image-container{
+            width: 20%;
+            img{
+                width: 100%;
+            }
+        }
+        .text-container{
+            width: 80%;
+            text-align: left;
+            .author-name, .body-text{
+                text-align: left;
+            }
+        }
+    }
+}

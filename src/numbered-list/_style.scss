@@ -1,0 +1,7 @@
+.interfolio-numbered-list-block {
+    margin-top: 50px;
+
+    @media screen and (max-width: $_large) {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,20 @@
+.wp-block-interfolio-block-interfolio-cta  {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .cta-icon{
+        margin-right: 10px;
+    }
+
+    .cta-text{
+        background-color: transparent;
+        width: auto;
+    }
+
+}
+  
+.wp-block-interfolio-block-interfolio-cta-option-container{
+    margin: 15px 0;
+}

@@ -1,0 +1,25 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.interfolio-image-with-text-block{
+  font-family: "Gotham Book";
+
+
+  .interfolio-image-with-text {
+    margin: auto;
+  }
+
+  p{
+    &.has-text-align-center{
+      margin: 0 auto;
+    }
+
+    &.has-text-align-right{
+      margin: 0 0 0 auto;
+    }
+    font-size: 18px;
+  }
+}

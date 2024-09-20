@@ -1,0 +1,77 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block-interfolio-block-interfolio-header  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  &.video{
+    .preview-video{
+      left: 50%;
+      min-height: 100%;
+      min-width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &.small{
+    min-height: 200px;
+  }
+
+  &.medium{
+    min-height: 350px;
+  }
+
+  &.large{
+    min-height: 500px;
+  }
+
+  &.full{
+    min-height: 100vh;
+  }
+
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.wp-block-interfolio-block-interfolio-header-option-container{
+  margin: 15px 0;
+
+  .interfolio-block-full-width-button{
+    display: block !important;
+    margin: 10px auto !important;
+  }
+
+  .interfolio-block-toggle{
+    .components-base-control__field{
+      flex-direction: column;
+      align-items: center;
+      .components-toggle-control__label{
+        text-align: center;
+        order: 1
+      }
+      .components-form-toggle{
+        order: 2;
+        margin: 0;
+      }
+    }
+
+    .components-base-control__help{
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.interfolio-cta-block{
+    a{
+        font-size: 18px;
+        display: inline-flex;
+        align-items: center;
+
+        i{
+            &.left-side{
+                margin-right: 10px;
+            }
+            &.right-side{
+                margin-left: 10px;
+            }
+            font-size: 40px;
+        }
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}

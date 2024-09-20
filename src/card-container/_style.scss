@@ -1,0 +1,68 @@
+.interfolio-card-container-block{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+
+    .interfolio-card-container-description{
+        margin: 25px 0;
+    }
+
+    .card-grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+
+        .interfolio-card-block-wrapper{
+            width: 100%;
+            padding: 20px;
+        }
+
+
+        &.has-custom-card-height{
+            .interfolio-card-block-wrapper{
+                .interfolio-card-block{
+                    height: var(--card-height);
+                    overflow: var(--overflow-behavior);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $_medium){
+    .interfolio-card-container-block{
+        margin: 65px 0;
+        .interfolio-card-container-description{
+            margin: 30px 0;
+        }
+        .card-grid{
+            .interfolio-card-block-wrapper{
+                width: 50%;
+            }
+            &.equalize-height{
+                .interfolio-card-block-wrapper{
+                    .interfolio-card-block{
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $_large){
+    .interfolio-card-container-block{
+        margin: 0;
+        .interfolio-card-container-description{
+            max-width: 75%;
+        }
+        .card-grid{
+            .interfolio-card-block-wrapper{
+                width: calc(100% / var(--columns));
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.signature-block-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 50px 0;
+
+    .image-container{
+        width: 100%;
+        text-align: center;
+        img{
+            width: 40%;
+            border-radius: 50%;
+        }
+    }
+
+    .text-container{
+        width: 100%;
+        text-align: center;
+
+        .author-name{
+            font-family: "Gotham Bold";
+            font-size: 24px;
+        }
+
+        .author-name, .body-text{
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: $_large){
+    .signature-block-container{
+        .image-container{
+            width: 20%;
+            img{
+                width: 100%;
+            }
+        }
+        .text-container{
+            width: 80%;
+            text-align: left;
+            padding-left: 40px;
+            .author-name, .body-text{
+                text-align: left;
+            }
+        }
+    }
+}

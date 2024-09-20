@@ -1,0 +1,108 @@
+.interfolio-background-graphic-container{
+    position: relative;
+
+    .interfolio-background-graphic{
+        position: absolute;
+        z-index: -1;
+        width: fit-content;
+
+        .primary-shape, .secondary-shape{
+            margin-bottom: 20px;
+        }
+
+        &.red{
+            .primary-shape, .secondary-shape{
+                background-color: $_red_tint;
+            }
+        }
+
+        &.gray{
+            .primary-shape, .secondary-shape{
+                background-color: $_gray_tint;
+            }
+        }
+
+        &.light-blue{
+            .primary-shape, .secondary-shape{
+                background-color: $_lightblue_tint;
+            }
+        }
+
+        &.dark-blue{
+            .primary-shape, .secondary-shape{
+                background-color: $_darkblue_tint;
+            }
+        }
+
+        &.left{
+          left: -40px;
+          top: -40px;
+        }
+
+        &.right{
+          right: -40px;
+          top: -10px;
+        }
+
+        &.center{
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        &.xsmall{
+            .primary-shape{
+                width: 80px;
+                height: 80px;
+            }
+            .secondary-shape{
+                width: 80px;
+                height: 10px;
+            }
+        }
+
+        &.small{
+            .primary-shape{
+                width: 160px;
+                height: 160px;
+            }
+            .secondary-shape{
+                width: 160px;
+                height: 10px;
+            }
+        }
+
+        &.medium{
+            .primary-shape{
+                width: 240px;
+                height: 240px;
+            }
+            .secondary-shape{
+                width: 240px;
+                height: 10px;
+            }
+        }
+
+        &.large{
+            .primary-shape{
+                width: 320px;
+                height: 320px;
+            }
+            .secondary-shape{
+                width: 320px;
+                height: 10px;
+            }
+        }
+
+        &.xlarge{
+            .primary-shape{
+                width: 500px;
+                height: 400px;
+            }
+            .secondary-shape{
+                width: 500px;
+                height: 10px;
+            }
+        }
+    }
+}

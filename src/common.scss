@@ -1,0 +1,29 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+
+//Interfolio Brand Colors
+$_red: #FF6C00;
+$_darkblue: #032B43;
+$_lightblue: #4791C5;
+$_gray: #D6D6D6;
+$_black: #181716;
+$_white: #FFFFFF;
+
+$_red_tint: #F1BBC0;
+$_darkblue_tint: #9AAAB4;
+$_lightblue_tint: #B5D3E8;
+$_gray_tint: #EFEFEF;
+
+//Bootstrap Breakpoints
+$_small: 576px;
+$_medium: 768px;
+$_large: 992px;
+$_xlarge: 1200px;
+
+//Underscores Default Widths
+$size__site-main: 100%;
+$size__site-sidebar: 25%;

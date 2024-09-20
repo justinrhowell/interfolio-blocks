@@ -1,0 +1,22 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+.wp-block-interfolio-block-interfolio-image-with-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .editor-container{
+    max-width: 610px;
+    margin: 0 auto;
+  }
+}
+
+.wp-block-interfolio-block-interfolio-image-with-text-option-container{
+  margin: 15px 0;
+}
